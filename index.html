@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadania Cosinus</title>
+    <style>
+        body {
+            font-family: monospace;
+            font-weight: 600;
+            align-items: center;
+        }
+
+        ul,
+        li {
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .trescZadania {
+            background-color: #e7a61a;
+            margin: 15px;
+            padding: 10px;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            text-align: center;
+            width: 450px
+        }
+
+
+
+        button {
+            background: #171f24;
+            background-image: linear-gradient(to bottom, #171f24, #2980b9);
+            border-radius: 10px;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 12px;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            margin-bottom: 15px;
+            margin-top: 15px;
+
+        }
+
+        button:hover {
+            background: #3cb0fd;
+            background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+            text-decoration: none;
+        }
+
+
+        table {
+            width: 450px;
+            height: 110px;
+
+            border: 4px solid #555555;
+            background-color: #123123;
+            width: 400px;
+            border-collapse: collapse;
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
+
+        }
+
+        td {
+            width: 100px;
+            height: 25px;
+            border: 1px solid #434234;
+            padding: 4px 7px;
+        }
+
+        .tabZad21 {
+            width: 90%;
+            height: auto;
+
+            border: 5px dashed #1C6EA4;
+            background-color: #e7a61a;
+            width: 400px;
+            border-collapse: collapse;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+
+        }
+
+        .tabelaZad32{            
+            background-color: #e7a61a;            
+            border: 5px;           
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .tabelaZad32 td {
+            order: 1px solid #434234;
+            padding: 4px 7px;
+        }
+
+    </style>
+
+</head>
+
+<body><br>
+    <div class="trescZadania" id="div11">Zadanie 1.0<br>      
+    
+    <h1 id="witaj">Witaj na stronie</h1><br><br>
+    
+    Napisz skrypt który wykorzystując zdarzenia, spowoduje zwiekszenie rozmiaru napisu "Witaj na stronie" po najechaniu na niego myszką. Po opuszczeniu wraca do poprzeniego rozmiaru.
+    
+    </div>
+    
+    <div class="trescZadania" id="div11">Zadanie 1.1<br> Napisz skrypt umieszczający na stronie nazwy miesięcy w postaci listy(wyliczenie z kropkami)
+        <br>
+
+        <button id="11">Wyświetl miesiące</button>
+    </div>
+
+    <div class="trescZadania" id="div12">Zadanie 1.2<br> Napisz skrypt umieszczający na stronie nazwy dni tygodnia w postaci listy numerowanej.<br>
+        <button id="12">Wyświetl dni tygodnia</button>
+    </div>
+
+    <div class="trescZadania" id="div13">Zadanie 1.3<br> Wyswietlic na stronie tabelke 4x4(za pomocą skryptu JS) <br>
+        <button id="13">Wyswietl tabele 4x4</button>
+    </div>
+    
+    <div class="trescZadania" id="div21">Zadanie 2.1<br> Napisać skrypt pytający o 11 liczb i wyświetlający ich sumę oraz średnią bezpośrednio na stronie <br> <br>
+
+        <table class="tabZad21">
+            <tr>
+                <td id="td211">Sposób z 11 zmiennymi.<br>
+                    <button id="211">Podaj 11 liczb</button>
+                    <br><br></td>
+
+                <td id="td213">
+                    Sposób z tablicą.<br>
+                    <button id="213">Podaj 11 liczb</button>
+                </td>
+
+                <td id="td212">
+                    Sposób z tablicą(dowolna ilość zmiennych).<br>
+                    <button id="212">Podaj dowolną ilość liczb</button>
+                </td>
+
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="trescZadania" id="div22">Zadanie 2.2<br> <br> Użytkownik podaje liczby a, b, c. Napisz skrypt wyświetlający je w kolejności od najmniejszej do najwiekszej.
+        <br>
+        <button id="22">Podaj 3 cyfry i posortuj.</button>
+        <br><br>
+    </div>
+
+    <div class="trescZadania" id="div23">Zadanie 2.3<br> <br> Użytkownik podaje 2 liczby a i b. Napisz skrypt obliczający wyrażenie pierwiastek(a)/pierwiastek(b). Uwzględnij sprawdzenie czy wyrażenie pod pierwiastkiem nie będzie ujemne.
+        <br>
+        <button id="23">Dziel pierwiastki</button>
+        <br><br>
+    </div>
+    
+    <div class="trescZadania" id="div31">Zadanie 3.1<br> Zapytaj użytkownika o liczbę n i tekst. Wyświetl na stronie szlaczek o długości n złożony ze znaku "*" oraz tekstu podanego przez użytkownika
+        <br>
+
+        <button id="31">Wyswietl szlaczek</button>
+    </div>
+
+    <div class="trescZadania" id="div32">Zadanie 3.2<br> <br> Użytkownik podaje szerokość i wysokość tabeli oraz liczbę wierszy. Umiesć na stronie tabelę o trzech kolumnach i podanej liczbie wierszy i podajen wielkości.
+        <br>
+        <button id="32">Rysuj tabelę</button>
+        <br><br>
+    </div>
+    
+<div class="trescZadania" id="div33">Zadanie 3.3<br> <br> Wyswietl na stronie listę numerowanązawierającą kolejnych 100 pierwiastków liczb.
+        <br>
+        <button id="33">Wyświetl 100 kolejnych pierwiastków liczb</button>
+        <br><br>
+    </div>
+
+    <script>
+        //zadanie 1.0
+
+
+        var powiekszNapisWitaj = function() {
+
+            with(witajNaStronie.style) {
+                fontSize = '60px';
+            }
+
+        }
+        var pomniejszNapisWitaj = function() {
+            with(witajNaStronie.style) {
+                fontSize = '30px';
+            }
+        }
+
+        const witajNaStronie = document.getElementById('witaj');
+        witajNaStronie.addEventListener("mouseover", powiekszNapisWitaj);
+        witajNaStronie.addEventListener("mouseout", pomniejszNapisWitaj);
+
+        //zadanie 1.1
+
+        const tablicaMiesiecy = ["styczen", "luty", "marzec", "kwiecień", "maj", "czerwiec", "lipiec", "sierpień", "wrzesień", "pazdziernik", "listopad", "grudzień"];
+
+        const wyswietlMiesiace = function() {
+
+            const div11 = document.getElementById('div11');
+            const tabelaMiesiecy = document.createElement("ul");
+            div11.appendChild(tabelaMiesiecy);
+            tabelaMiesiecy.className = "lista";
+
+            for (i = 0; i < 12; i++) {
+                const miesiac = document.createElement("li");
+                miesiac.innerHTML = tablicaMiesiecy[i];
+                tabelaMiesiecy.appendChild(miesiac);
+
+            }
+        }
+        const b11 = document.getElementById('11');
+        b11.addEventListener("click", wyswietlMiesiace);
+
+        //Zadanie 1.2
+
+        const tablicaDni = ["Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela"];
+
+        const wyswietlDniTygodnia = function() {
+
+            const div12 = document.getElementById('div12');
+            const tabelaDni = document.createElement("ol");
+            div12.appendChild(tabelaDni);
+            tabelaDni.className = "lista";
+
+            for (i = 0; i < 7; i++) {
+                const dzien = document.createElement("li");
+                dzien.innerHTML = tablicaDni[i];
+                tabelaDni.appendChild(dzien);
+            }
+
+        }
+        const b12 = document.getElementById('12');
+        b12.addEventListener("click", wyswietlDniTygodnia);
+
+        // zadanie 1.3
+
+        const wyswietlanieTabeli4x4 = function() {
+
+            const div13 = document.getElementById('div13');
+            const tabela4x4 = document.createElement("table");
+            div13.appendChild(tabela4x4);
+
+
+            const kolumny = document.createElement("td");
+
+            for (i = 0; i < 4; i++) {
+                const wiersze = document.createElement("tr");
+                tabela4x4.appendChild(wiersze);
+                for (y = 0; y < 4; y++) {
+                    const kolumny = document.createElement("td");
+                    wiersze.appendChild(kolumny);
+                }
+            }
+
+        }
+
+        const b13 = document.getElementById('13');
+        b13.addEventListener("click", wyswietlanieTabeli4x4);
+
+        // zadanie 2.1.1
+
+        const suma211 = function() {
+
+            var a1 = parseInt(prompt("proszę podać cyfre numer 1"));
+            var a2 = parseInt(prompt("proszę podać cyfre numer 2"));
+            var a3 = parseInt(prompt("proszę podać cyfre numer 3"));
+            var a4 = parseInt(prompt("proszę podać cyfre numer 4"));
+            var a5 = parseInt(prompt("proszę podać cyfre numer 5"));
+            var a6 = parseInt(prompt("proszę podać cyfre numer 6"));
+            var a7 = parseInt(prompt("proszę podać cyfre numer 7"));
+            var a8 = parseInt(prompt("proszę podać cyfre numer 8"));
+            var a9 = parseInt(prompt("proszę podać cyfre numer 9"));
+            var a10 = parseInt(prompt("proszę podać cyfre numer 10"));
+            var a11 = parseInt(prompt("proszę podać cyfre numer 11"));
+
+            var wynikSuma211 = a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10 + a11;
+
+            var wynikSrednia211 = (a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10 + a11) / 11;
+
+
+            const spanWynikSuma211 = document.createElement("span");
+
+            const td211 = document.getElementById('td211');
+
+            td211.appendChild(spanWynikSuma211);
+            spanWynikSuma211.innerHTML = "Suma to: " + wynikSuma211 + " ";
+
+            const spanWynikSrednia211 = document.createElement("span");
+
+            td211.appendChild(spanWynikSrednia211);
+            spanWynikSrednia211.innerHTML = "Natomiast średnia to: " + wynikSrednia211;
+
+        }
+
+        const b211 = document.getElementById('211');
+        b211.addEventListener("click", suma211);
+
+
+
+        // zadanie 2.1.2
+
+        const suma212 = function() {
+            var tablicaZad212 = [];
+            var sumaZad212 = 0;
+            var sredniaZad212 = 0;
+
+
+            var iloscLiczbDoZadania212 = parseInt(prompt("Proszę podać ile liczb będziemy sumować a następnie obliczać z nich średnią"));
+
+            for (i = 0; i < iloscLiczbDoZadania212; i++) {
+                tablicaZad212[i] = parseInt(prompt("Prosze podać liczbe nr " + parseInt(i + 1)));
+                console.log(tablicaZad212);
+            }
+
+            for (y = 0; y < tablicaZad212.length; y++) {
+                sumaZad212 += tablicaZad212[y];
+                console.log(sumaZad212);
+            }
+
+            const spanWynikSuma212 = document.createElement("span");
+
+            const td212 = document.getElementById('td212');
+
+            td212.appendChild(spanWynikSuma212);
+            spanWynikSuma212.innerHTML = "Suma tych liczb to  " + sumaZad212 + "   ";
+
+            sredniaZad212 = sumaZad212 / tablicaZad212.length;
+
+            console.log("srednia " + sredniaZad212);
+
+            const spanWynikSrednia212 = document.createElement("span");
+            td212.appendChild(spanWynikSrednia212);
+            spanWynikSrednia212.innerHTML = "Średnia to " + sredniaZad212;
+
+
+        }
+        const b212 = document.getElementById('212');
+        b212.addEventListener("click", suma212);
+        
+        // zadanie 2.1.3
+
+        const suma213 = function() {
+            var tablicaZad213 = [];
+            var sumaZad213 = 0;
+            var sredniaZad213 = 0;
+
+
+
+            for (i = 0; i < 11; i++) {
+                tablicaZad213[i] = parseInt(prompt("Prosze podać liczbe nr " + parseInt(i + 1)));
+                console.log(tablicaZad213);
+            }
+
+            for (y = 0; y < tablicaZad213.length; y++) {
+                sumaZad213 += tablicaZad213[y];
+                console.log(sumaZad213);
+            }
+
+            const spanWynikSuma213 = document.createElement("span");
+
+            const td213 = document.getElementById('td213');
+
+            td213.appendChild(spanWynikSuma213);
+            spanWynikSuma213.innerHTML = "Suma tych liczb to  " + sumaZad213 + "   ";
+
+            sredniaZad213 = sumaZad213 / tablicaZad213.length;
+
+            console.log("srednia " + sredniaZad213);
+
+            const spanWynikSrednia213 = document.createElement("span");
+            td213.appendChild(spanWynikSrednia213);
+            spanWynikSrednia213.innerHTML = "Średnia to " + sredniaZad213;
+
+
+        }
+
+        const b213 = document.getElementById('213');
+        b213.addEventListener("click", suma213)
+
+        // zadanie 2.2
+
+        const sortowanie = function() {
+            tablicaDoSortowania = [];
+            tablicaLiterek = ["a", "b", "c"];
+
+            for (i = 0; i < 3; i++) {
+                tablicaDoSortowania[i] = parseInt(prompt("proszę podać " + tablicaLiterek[i]));
+                console.log(tablicaDoSortowania);
+            }
+            tablicaDoSortowania.sort(function(a, b) {
+                return a - b
+            });
+            console.log(tablicaDoSortowania);
+
+            const div22 = document.getElementById('div22');
+
+            const spanWynik22 = document.createElement("span");
+            div22.appendChild(spanWynik22);
+            spanWynik22.innerHTML = "Wynik to " + tablicaDoSortowania[0] + " " + tablicaDoSortowania[1] + " " + tablicaDoSortowania[2];
+
+
+
+        }
+
+        const b22 = document.getElementById('22');
+        b22.addEventListener("click", sortowanie);
+
+        // zadanie 2.3
+        
+        const pierwiastkowanie = function(){
+        const a = parseInt(prompt("Proszę podać a"));
+        const b = parseInt(prompt("proszę podać b"));
+            if(a < 0){
+                window.alert("Wartości muszą być wieksze od 0");
+            }
+            else if(b<0){
+                window.alert("Wartości muszą być wieksze od 0");
+            }
+            else{
+                
+                const div23 = document.getElementById('div23');
+                const span23 = document.createElement("span");
+                div23.appendChild(span23);
+                span23.innerHTML = "Wynik dzielenia pierwiastków a i b to: " + (Math.sqrt(a)/Math.sqrt(b));
+            }
+           
+            
+            
+        }
+        
+        
+        const b23 = document.getElementById('23');
+        b23.addEventListener("click", pierwiastkowanie);
+
+        // zadanie 3.1
+
+        var zad_31 = function() {
+            var liczba = prompt("proszę podać liczbę n");
+            var text = "*" + prompt("proszę podać tekst do wyświetlenia");
+            var wynik = text;
+
+            const sector = document.createElement("div");
+            const div31 = document.getElementById('div31');
+
+            div31.appendChild(sector);
+
+
+            for (i = 0; i < liczba - 1; i++) {
+                wynik += text;
+
+            }
+
+            sector.textContent = wynik;
+        }
+
+        const b31 = document.getElementById('31');
+        b31.addEventListener("click", zad_31);
+        
+        // zadanie 3.2 
+        
+        const rysujTabele = function(){
+        
+        let wysokoscTabeli = parseInt(prompt("Proszę podać wysokość tabeli", "100"));
+        let szerokoscTabeli = parseInt(prompt("Proszę podać szerokość tabeli", "400"));
+        let iloscWierszy =  parseInt(prompt("Proszę podać ilość wierszy w tabeli", "5"));
+        
+            const div32 = document.getElementById('div32');
+            const tabelaZad32 = document.createElement("table");
+            div32.appendChild(tabelaZad32);
+            tabelaZad32.className = "tabelaZad32";
+           
+            const tabelaZad32Style = document.querySelector('.tabelaZad32');
+            tabelaZad32Style.style.height = wysokoscTabeli;
+            tabelaZad32Style.style.width = szerokoscTabeli;
+            
+            for(i=0; i < iloscWierszy; i++){
+                const tr32 = document.createElement("tr");
+                tabelaZad32.appendChild(tr32);
+                for(j=0; j < 3; j++){
+                    const td32 = document.createElement("td");
+                    tr32.appendChild(td32);
+                }
+            }
+            
+            
+        }
+        
+        const b32 = document.getElementById('32');
+        b32.addEventListener("click", rysujTabele);
+        
+        // zadanie 3.3
+        
+        const wyswietlPierwiastki = function(){
+         
+        const div33 = document.getElementById('div33');
+        const ol33 = document.createElement("ol");
+                div33.appendChild(ol33);
+            
+            for(i=1;i < 101; i++){
+                const li33 = document.createElement("li");
+                ol33.appendChild(li33);
+                li33.innerHTML = "Pierwiastek z " + i + " to " + Math.sqrt(i);
+            }
+        }
+        
+        
+        const b33 = document.getElementById('33');
+        b33.addEventListener("click", wyswietlPierwiastki);
+
+    </script>
+</body>
+
+</html>
