@@ -1,14 +1,14 @@
-#Changelog
+# Changelog
 
 
 ## 1.0 2018-05-28
 
-### Added
+### Added:
 
 - changelog!
 
 
-### Changed
+### Changed:
 
 - moved style and scripts into external files
 - removed not necessary "br"

@@ -53,7 +53,7 @@
 
             for (i = 0; i < 7; i++) {
                 const dzien = document.createElement("li");
-                dzien.innerTEXT = tablicaDni[i];
+                dzien.innerHTML = tablicaDni[i];
                 tabelaDni.appendChild(dzien);
             }
 
@@ -151,7 +151,7 @@
             const td212 = document.getElementById('td212');
 
             td212.appendChild(spanWynikSuma212);
-            spanWynikSuma212.innerTEXT = "Suma tych liczb to  " + sumaZad212 + "   ";
+            spanWynikSuma212.innerHTML = "Suma tych liczb to  " + sumaZad212 + "   ";
 
             sredniaZad212 = sumaZad212 / tablicaZad212.length;
 
@@ -159,7 +159,7 @@
 
             const spanWynikSrednia212 = document.createElement("span");
             td212.appendChild(spanWynikSrednia212);
-            spanWynikSrednia212.innerTEXT = "Średnia to " + sredniaZad212;
+            spanWynikSrednia212.innerHTML = "Średnia to " + sredniaZad212;
 
 
         }
@@ -190,7 +190,7 @@
             const td213 = document.getElementById('td213');
 
             td213.appendChild(spanWynikSuma213);
-            spanWynikSuma213.innerTEXT = "Suma tych liczb to  " + sumaZad213 + "   ";
+            spanWynikSuma213.innerHTML = "Suma tych liczb to  " + sumaZad213 + "   ";
 
             sredniaZad213 = sumaZad213 / tablicaZad213.length;
 
@@ -198,7 +198,7 @@
 
             const spanWynikSrednia213 = document.createElement("span");
             td213.appendChild(spanWynikSrednia213);
-            spanWynikSrednia213.innerTEXT = "Średnia to " + sredniaZad213;
+            spanWynikSrednia213.innerHTML = "Średnia to " + sredniaZad213;
 
 
         }
@@ -225,7 +225,7 @@
 
             const spanWynik22 = document.createElement("span");
             div22.appendChild(spanWynik22);
-            spanWynik22.innerTEXT = "Wynik to " + tablicaDoSortowania[0] + " " + tablicaDoSortowania[1] + " " + tablicaDoSortowania[2];
+            spanWynik22.innerHTML = "Wynik to " + tablicaDoSortowania[0] + " " + tablicaDoSortowania[1] + " " + tablicaDoSortowania[2];
 
 
 
@@ -250,7 +250,7 @@
                 const div23 = document.getElementById('div23');
                 const span23 = document.createElement("span");
                 div23.appendChild(span23);
-                span23.innerTEXT = "Wynik dzielenia pierwiastków a i b to: " + (Math.sqrt(a)/Math.sqrt(b));
+                span23.innerHTML = "Wynik dzielenia pierwiastków a i b to: " + (Math.sqrt(a)/Math.sqrt(b));
             }
            
             
@@ -328,7 +328,7 @@
             for(i=1;i < 101; i++){
                 const li33 = document.createElement("li");
                 ol33.appendChild(li33);
-                li33.innerTEXT = "Pierwiastek z " + i + " to " + Math.sqrt(i);
+                li33.innerHTML = "Pierwiastek z " + i + " to " + Math.sqrt(i);
             }
         }
         
